@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {% load static %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Coding Camp</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+<style>
+  .reg {
+
+  width: 600px;
+  height: 800px;
+  padding: 16px;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+</style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="./">
+            <strong style="color:#032129">CC</strong>
+            <span>
+              Coding Camp
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./11">
+                    Home <span class="sr-only">(current)</span></a>
+                </li>
+                   <li class="nav-item">
+                  <a class="nav-link" href="./12"> Register Now </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+<section class="reg_section layout_padding">
+      <div class="container">
+      <div class="row">
+
+                        <div class="reg" style="position:relative; top:-70px; height:950px;" >
+                         <form id="log-form" role="form" method="post" action="./20">
+                              {% csrf_token %}
+
+                              <!-- SECTION TITLE -->
+                             <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                   <h2 align="center">BOOKING OF SQL</h2>
+                              </div>
+
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <div class="col-md-6 col-sm-6" >
+                                        <label for="name"> FULL NAME</label>
+                                        <input type="text" class="form-control" id="name" name="names" placeholder="Enter Your Full Name" required style="width:500px;">
+
+
+                                   </div>
+                                   <div class="col-md-12 col-sm-6" >
+                                        <label for="email">EMAIL</label>
+                                        <input type="email" class="form-control" id="email" name="uemail" placeholder="Your Email" required>
+                                   </div>
+
+                                  <div class="col-md-12 col-sm-6" >
+                                   <label for="phone">CONTACT NO</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone no." pattern="[789][0-9]{9}" title="Check the number format" required>
+                                   </div>
+
+
+                                   <div class="col-md-12 col-sm-12">
+                                         <label>COURSE</label>&nbsp;
+
+                                        <input type="text" name="course" value="SQL DEVELOPER" readonly required>&nbsp;&nbsp;&nbsp;
+
+                                        </div>
+                                  <div class="col-md-6 col-sm-6" >
+                                        <label for="quali">QUALIFICATION/PREVIOUSLY STUDIED</label>
+                                        <input type="text" class="form-control" id="quali" name="quali" placeholder="Enter Your Qualification" required style="width:500px;">
+
+
+                                   </div>
+
+                              <div class="col-md-12 col-sm-6" >
+                                        <label for="address">ADDRESS</label>
+                                  <textarea id="address" name="address" placeholder="Enter Your Address" required style="width:500px; height:80px; "></textarea></div><br>
+
+
+                                  <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.8s">
+                                       <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OIAfYRLu8RmCJH" async> </script> </form>
+                                   </div>
+
+
+                                   <div class="col-md-12 col-sm-12">
+
+                                        <label for="paymentid"></label>
+                                        <input type="text" class="form-control" id="paymentid" name="paymentid" placeholder="Payment ID" required>
+
+                                        <button type="submit" class="cart-option" style="width:500px;" id="cf-submit" name="submit">SUBMIT</button>
+                                   </div>
+                              </div></div></form>
+                        </div>
+               </div>
+          </div>
+</section>
+
+ <!-- info section -->
+  <section class="info_section layout_padding" style="position:relative; top:500px;">
+       <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <div>
+              <a href="./">
+               <strong style="color:#032129">CC</strong>
+            <span>
+              Coding Camp
+            </span>
+              </a>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links ">
+            <h5>
+              Contact Us
+            </h5>
+            <p class="pr-0 pr-md-4 pr-lg-5">
+              Company Name: Coding Camp Solutions,
+                123 Virtual Avenue,E-ville, Learningland, United E-states
+             Zip Code: 98765
+                Phone Number: +1 (555) 123-4567
+
+            </p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+
+
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+
+ </body>
+
+</html>
