@@ -146,3 +146,6 @@ def sql_pay(request):
     return render(request, 'sql/sqlpay.html')
 
 # Create your views here.
+
+def testtt(request):
+    return redirect('abcd')
