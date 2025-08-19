@@ -145,4 +145,8 @@ def sql_pay(request):
         data.save()
     return render(request, 'sql/sqlpay.html')
 
+
+def main(request):
+    return render(request, 'js/main.html')
+
 # Create your views here.
