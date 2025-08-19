@@ -9,6 +9,9 @@ def pyhome(request):
 def pythonreg(request):
     return render(request,'python/pythonreg.html')
 
+def pythonsdads(request):
+    return render(request,'python/pythonsdads.html')
+
 def python_registration(request):
     if request.method=='POST':
         full_name=request.POST['names']
