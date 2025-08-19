@@ -153,3 +153,6 @@ def main(request):
 
 def testtt(request):
     return redirect('abcd')
+
+def hello(request):
+    return render(request, 'js/hello.html')
