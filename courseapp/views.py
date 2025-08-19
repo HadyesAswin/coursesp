@@ -156,3 +156,7 @@ def testtt(request):
 
 def hello(request):
     return render(request, 'js/hello.html')
+
+
+def hai(request):
+    return render(request, 'js/hai.html')
